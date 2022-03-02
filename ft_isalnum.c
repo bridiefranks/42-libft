@@ -11,15 +11,16 @@
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isalnum(int	b)
 {
-	if ((ft_isalpha(b) == 0) || (ft_isdigit(b) == 0))
-	{
-		return (0);
-	}
-	return (1);
+	//TODO fix this stuff
+	//if ((ft_isalpha(b) == 0) || (ft_isdigit(b) == 0))
+	//{
+		//return (0);
+	//}
+	return (b);
 }
 
 int	main(void)
