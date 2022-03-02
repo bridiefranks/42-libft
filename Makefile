@@ -21,7 +21,7 @@ $(NAME): $(OFILES)
 
 all: $(NAME)
 
-%.x: %.c
+%.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
