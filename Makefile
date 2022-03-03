@@ -6,7 +6,7 @@
 #    By: bfranks <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/10 16:27:48 by bfranks           #+#    #+#              #
-#    Updated: 2022/02/10 16:42:55 by bfranks          ###   ########.fr        #
+#    Updated: 2022/03/03 14:40:48 by bfranks          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,3 +31,5 @@ fclean:
 	-rm *.o *.a
 
 re: fclean all
+
+.PHONY: all clean fclean re
