@@ -12,7 +12,7 @@
 
 NAME = libft.a
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra
 CFILES = $(wildcard *.c)
 OFILES = $(CFILES:.c=.o)
 

@@ -10,24 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*#include <stdio.h>*/
 #include "libft.h"
-/*
-int	ft_isalnum(int	b)
-{
-	fix this stuff
-	if ((ft_isalpha(b) == 0) || (ft_isdigit(b) == 0))
-	{
-		return (0);
-	}
-	return (b);
-}
 
+int	ft_isalnum(int	c)
+{
+	if (((c <= '9') && (c >= '0')) || ((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
+	{
+		return (1);
+	}
+	return (0);
+}
+/*
 int	main(void)
 {
 	int	v;
 
-	v = ft_isalnum('5');
+	v = ft_isalnum(' ');
 	printf("%d\n", v);
 	return (0);
 }*/
+
