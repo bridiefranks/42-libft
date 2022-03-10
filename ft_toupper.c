@@ -6,14 +6,26 @@
 /*   By: bfranks <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:23:34 by bfranks           #+#    #+#             */
-/*   Updated: 2022/03/03 18:23:47 by bfranks          ###   ########.fr       */
+/*   Updated: 2022/03/10 12:16:59 by bfranks          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*#include <stdio.h>*/
 
 int	ft_toupper(int c)
 {
-	return(0);
+	if (c >= 'a' && c <= 'z')
+	{
+		c = c - 32;
+	}
+	return (c);
 }
+/*
+int	main(void)
+{
+	int	b;
+	b = ft_toupper('8');
+	printf("%d\n", b);
+	return (0);
+}*/

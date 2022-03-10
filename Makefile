@@ -6,7 +6,7 @@
 #    By: bfranks <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/10 16:27:48 by bfranks           #+#    #+#              #
-#    Updated: 2022/03/03 14:40:48 by bfranks          ###   ########.fr        #
+#    Updated: 2022/03/10 14:33:52 by bfranks          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,10 +16,10 @@ CFLAGS = -Wall -Wextra
 CFILES = $(wildcard *.c)
 OFILES = $(CFILES:.c=.o)
 
+all: $(NAME)
+
 $(NAME): $(OFILES)
 	ar -rc $@ $^ 
-
-all: $(NAME)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
@@ -27,8 +27,8 @@ all: $(NAME)
 clean:
 	-rm *.o
 
-fclean:
-	-rm *.o *.a
+fclean: clean
+	-rm *.a
 
 re: fclean all
 
