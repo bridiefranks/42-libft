@@ -6,7 +6,7 @@
 /*   By: bfranks <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:47:08 by bfranks           #+#    #+#             */
-/*   Updated: 2022/03/03 18:47:19 by bfranks          ###   ########.fr       */
+/*   Updated: 2022/03/10 17:27:16 by bfranks          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	return(0);
+	write(fd, s, ft_strlen(s));
 }
