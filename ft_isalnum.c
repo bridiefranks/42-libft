@@ -6,14 +6,14 @@
 /*   By: bfranks <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 14:47:48 by bfranks           #+#    #+#             */
-/*   Updated: 2022/03/03 17:20:08 by bfranks          ###   ########.fr       */
+/*   Updated: 2022/03/10 11:40:07 by bfranks          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <stdio.h>*/
 #include "libft.h"
 
-int	ft_isalnum(int	c)
+int	ft_isalnum(int c)
 {
 	if (((c <= '9') && (c >= '0')) || ((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
 	{
@@ -30,4 +30,3 @@ int	main(void)
 	printf("%d\n", v);
 	return (0);
 }*/
-

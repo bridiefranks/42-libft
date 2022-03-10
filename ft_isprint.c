@@ -6,12 +6,12 @@
 /*   By: bfranks <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:06:11 by bfranks           #+#    #+#             */
-/*   Updated: 2022/03/03 18:06:24 by bfranks          ###   ########.fr       */
+/*   Updated: 2022/03/10 11:25:33 by bfranks          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+/*#include <stdio.h>*/
 
 int	ft_isprint(int c)
 {
@@ -27,8 +27,7 @@ int	main(void)
 {
 	int t;
 
-	t = ft_isprint('5');
+	t = ft_isprint('7');
 	printf("%d\n", t);
 	return (0);	
-}
-*/
+}*/
