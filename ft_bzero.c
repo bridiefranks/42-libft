@@ -14,5 +14,13 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	return;
+    unsigned char *p;
+    size_t i;
+
+    p = s;
+    for (i = 0; i < n; i++)
+    {
+        p[i] = 0;
+    }
+    return;
 }
