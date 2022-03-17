@@ -6,7 +6,7 @@
 /*   By: bfranks <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:16:05 by bfranks           #+#    #+#             */
-/*   Updated: 2022/03/03 18:16:17 by bfranks          ###   ########.fr       */
+/*   Updated: 2022/03/17 10:22:58 by bfranks          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-    unsigned char *p;
-    size_t i;
+	unsigned char	*p;
+	size_t			i;
 
-    p = s;
-    for (i = 0; i < n; i++)
-    {
-        p[i] = 0;
-    }
-    return;
+	p = s;
+	for (i = 0; i < n; i++)
+	{
+		p[i] = 0;
+	}
+	return ;
 }
