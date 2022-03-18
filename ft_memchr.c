@@ -26,9 +26,14 @@ void	*ft_memchr(const void *s, int c, size_t size)
 	return (NULL);
 }
 /*
- still don't know why my notation doesn't work, still don't
+/ still don't know why my notation doesn't work, still don't
 / know why we don't have to consider the size being longer 
 /than the length of the array.
+/answer: it's pesky notation- order of operations type thing. The code below should
+/now work, with its extra set of brackets ((unsigned char *)s)[i] -- ie the outside ones
+/As opposed to original: (unsigned char *)s[i] ...where it tries to dereference i before 
+/casting it, and can't cos it's void.
+
 
 void	*ft_memchr(const void *s, int c, size_t size)
 {
@@ -37,9 +42,10 @@ void	*ft_memchr(const void *s, int c, size_t size)
     i = 0;
     while (i < size)
     {
-        if ((unsigned char *)s[i] == (unsigned char)c)
-                return ((unsigned char *)(s[i]));
+        if (((unsigned char *)s)[i] == (unsigned char)c)
+                return &((unsigned char *)s)[i];
         i++;
     }
     return(NULL);
-}*/
+}
+*/

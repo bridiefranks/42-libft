@@ -20,9 +20,11 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	d = dst;
 	s = src;
-	for (i = 0; i < n; i++)
+	i = 0;
+	while (i < n)
 	{
 		d[i] = s[i];
+		i++;
 	}
 	return (dst);
 }
