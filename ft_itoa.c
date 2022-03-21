@@ -50,7 +50,7 @@ char	*ft_itoa(int n)
 	result = ft_calloc((digits + 1), sizeof(char));
 	if (!result)
 		return (0);
-	result [0] = '-';
+	result[0] = '-';
 	while (digits + sign)
 	{
 		result[digits - 1] = (num % 10 + '0');
