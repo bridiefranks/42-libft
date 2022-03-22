@@ -6,7 +6,7 @@
 /*   By: bfranks <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:34:23 by bfranks           #+#    #+#             */
-/*   Updated: 2022/03/17 14:04:56 by bfranks          ###   ########.fr       */
+/*   Updated: 2022/03/22 10:50:39 by bfranks          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strdup(const char *s1)
 {
-	size_t	size;
-	char	*ptr;
+	size_t			size;
+	char			*ptr;
 	unsigned int	i;
 
 	size = ft_strlen(s1);
